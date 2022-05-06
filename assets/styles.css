@@ -1,0 +1,226 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* VARIABLES */
+
+:root {
+    --space-xs: 15px;
+    --space-sm: 18px;
+    --space-md: 48px;
+    --space-lg: 57px;
+    --space-xl: 60px;
+    --space-2xl: 79px;
+
+    --text-xs: normal normal 400 11px/16px "Poppins";
+    --text-xs-bold: normal normal 500 11px/16px "Poppins";
+    --text-sm: normal normal 400 16px/24px "Poppins";
+    --text-sm-bold: normal normal 500 16px/24px "Poppins";
+    --text-md: normal normal 400 24px/24px 'Open Sans';
+    --text-md-bold: normal normal 700 24px/24px 'Open Sans';
+    --text-lg: normal normal  400 54px/72px'Open Sans';
+    --text-lg-bold: normal normal  400 54px/72px'Open Sans';
+    --text-xl: normal normal 400 72px/79px 'Open Sans';
+
+    --radius-sm: 4px;
+  
+    --clr-bg-default: #f5f6f8;
+    --clr-bg-paper: #ffffff;
+    --clr-accent: #109cf1;
+    --clr-text-primary: #323c47;
+    --clr-text-secondary: #4c5862;
+    --clr-success: #2ed47a;
+    --clr-success-contrast: #ffffff;
+    --clr-danger: #f7685b;
+    --clr-danger-contrast: #ffffff;
+  }
+  
+
+  .main{
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+  }
+
+
+  .main__content{
+    height: 80%;
+    width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .main__content__title{
+      font: var(--text-xl);
+      color: var(--clr-text-primary);
+      margin-top: var( --space-xl)
+  }
+
+
+  .main__content__calculator{
+    width: 400px;
+    font: var(--text-md);
+    color: var(--clr-text-primary);
+    margin-top: var( --space-lg);
+    display:flex;
+    align-items:center;
+  }
+
+  .main__content__calculator__title{
+   min-width: 190px;
+  }
+
+  .main__content__calculator__input{
+    margin-left: 10px;
+    width: 86px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  .main__content__calculator__output{
+    font-weight:700;
+     border-bottom: 2px solid var(--clr-text-primary);
+  }
+
+  .btn-primary{
+    margin-right: 14px;
+    margin-left: 14px;
+  
+  }
+
+.main__content__save{
+  font: var(--text-sm);
+  color: var(--clr-text-primary);
+  margin-top: var( --space-xs)
+}
+
+  .main__content__results{
+    display: flex;
+    flex-flow: column;
+    /* height: 200px; */
+    margin-top: var( --space-md)
+  }
+  
+
+  .main__content__results__title{
+    font: var(--text-lg);
+    color: var(--clr-text-primary);
+    cursor: pointer;
+}
+
+.main__content__results__output{
+    font: var(--text-md);
+    color: var(--clr-text-primary);
+    margin-top: var( --space-md);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+p{
+
+  padding-bottom: 18px;
+  border-bottom: 2px solid var(--clr-text-primary);
+  margin-top: 42px;
+}
+
+
+
+select {
+width:122px;
+height: 38px;
+background: #F2F2F2;
+color: #000;
+margin-top:14px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+background: #E6E6E6;
+border: 1px solid #CCCCCC;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+option{
+width: 249px;
+height: 42px;
+background: #FFFFFF;
+border: 1px solid #CCCCCC;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+#spinner-down{
+  position: relative;
+  left: 190px;
+  bottom:50px;
+}
+
+#spinner{
+ font-size:16px;
+}
+
+
+
+.red-alert{
+  color:var(--clr-danger);
+  border: 1px solid var(--clr-danger);
+}
+
+
+.red-alert-prop{
+  min-Width: 180px;
+  Height: 33px;
+  font-size: 16px;
+  font-weight: 400;
+  background: #F2DEDE;
+  border: 1px solid #EBCCCC;
+  border-radius: 4px;
+  color:
+  #A94442;
+  position: relative;
+  right:  150px;
+  top:50px;
+}
+
+
+.meaning-of-life-eror{
+  color:#D9534F;
+  font-size: 16px;
+  min-width: 300px;
+  border: none;
+  font-weight:400;
+}
